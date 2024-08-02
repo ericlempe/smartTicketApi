@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', fn() => dd('hello world'));
+Route::post('/login', LoginController::class)->name('login');
