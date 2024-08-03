@@ -28,7 +28,6 @@ it('should be able to check if the email and password is valid', function ($emai
     ])->assertJsonValidationErrors([
         'email' => __('auth.failed'),
     ]);
-
 })->with([
     'wrong email'    => ['wrongemail@example.com', 'password'],
     'wrong password' => ['johndoe@example.com', 'wrong_password'],
